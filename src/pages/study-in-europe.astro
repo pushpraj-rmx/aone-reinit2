@@ -1,0 +1,123 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import CTA from "@components/CTA.astro";
+import PageTitle from "@components/Page-Title.astro";
+// import TopCanadaCourses from "@components/TopCanadaCourses.astro";
+// import WhyChooseCanada from "@components/WhyChooseCanada.astro";
+import TopCountries from "../components/TopCountries.astro";
+// import CanadaContent1 from "@components/Canada-content1.astro";
+import OurPartners from "@components/OurPartners.astro";
+// import FAQ from "@components/FAQ.astro";
+import Testimonials from "@components/Testimonials.astro";
+import Contact from "@components/Contact.astro";
+// import LifeInAustralia from "@components/Life_in_Australia.astro";
+// import TabComponent from "@components/TabComponent.astro";
+// images
+import pageBannerImg from "@assets/img/country-img/europe-banner.jpg";
+
+const pageTitle = "A One Global";
+const pageDescription = "";
+const pageKeywords = "";
+const pageAuthor = "";
+const pageBanner = { url: pageBannerImg.src };
+---
+
+<!-- src/pages/index.astro -->
+<MainLayout title={pageTitle} description={pageDescription} keywords={pageKeywords} author={pageAuthor}>
+  <main>
+    <PageTitle title="Study in Europe" banner={pageBanner} />
+
+    <div class="container my-5">
+      <h1>Study in Europe - Information for International Students</h1>
+
+      <h2>Studying in Europe</h2>
+      <p>
+        Studying in Europe means attending universities or colleges to learn new things. Europe offers a diverse range of schools where you can study various subjects. It's an opportunity to meet new
+        people, explore different cultures, and have amazing experiences.
+      </p>
+
+      <h2>Reasons that Attract International Students to Europe</h2>
+      <ul>
+        <li style="list-style: disclosure-closed;"><strong>Good Schools:</strong> Europe hosts many prestigious institutions welcoming students from around the world.</li>
+        <li style="list-style: disclosure-closed;"><strong>Different Cultures:</strong> Experience diverse ways of living and languages due to Europe's proximity to many countries.</li>
+        <li style="list-style: disclosure-closed;"><strong>Easy Travel:</strong> Explore neighboring countries easily while studying in Europe.</li>
+        <li style="list-style: disclosure-closed;"><strong>English Classes:</strong> Many schools offer programs in English, making it accessible even if you don't speak the local language.</li>
+        <li style="list-style: disclosure-closed;"><strong>Cultural Attractions:</strong> Visit historical landmarks, museums, and other fascinating places across Europe.</li>
+        <li style="list-style: disclosure-closed;"><strong>Scholarships:</strong> Some schools provide financial aid to support your studies.</li>
+      </ul>
+
+      <h2>Degrees Provided by Education Providers</h2>
+      <ul>
+        <li style="list-style: disclosure-closed;">Bachelor's Degree</li>
+        <li style="list-style: disclosure-closed;">Master's Degree</li>
+        <li style="list-style: disclosure-closed;">Doctorate (Ph.D.)</li>
+        <li style="list-style: disclosure-closed;">Diploma or Certificate</li>
+        <li style="list-style: disclosure-closed;">Professional Degrees</li>
+      </ul>
+
+      <h2>University Fees at Top Ranked Universities</h2>
+      <table>
+        <tr>
+          <th>Top Ranked University</th>
+          <th>Average Tuition Fees</th>
+        </tr>
+        <tr>
+          <td>Heidelberg University</td>
+          <td>6000 EUR/year</td>
+        </tr>
+        <tr>
+          <td>Technical University of Munich</td>
+          <td>2000 EUR/year</td>
+        </tr>
+        <tr>
+          <td>Polytechnic University of Milan</td>
+          <td>3300 EUR/year</td>
+        </tr>
+        <tr>
+          <td>University of Bologna</td>
+          <td>2100 EUR/year</td>
+        </tr>
+        <tr>
+          <td>Ecole Polytechnique</td>
+          <td>12000 EUR/year</td>
+        </tr>
+      </table>
+
+      <h2>Intakes for Admission</h2>
+      <p>In Europe, universities typically accept students in the fall (September/October) and sometimes in the spring (February/March). Summer intakes are less common.</p>
+
+      <h2>Scholarships in Europe</h2>
+      <p>Europe offers various scholarships for international students to support their education. Some notable scholarships include:</p>
+      <ul>
+        <li style="list-style: disclosure-closed;">The Eiffel Excellence Scholarships</li>
+        <li style="list-style: disclosure-closed;">Ecole Normale Superieure International Selection</li>
+        <li style="list-style: disclosure-closed;">INSEAD MBA Scholarships</li>
+        <li style="list-style: disclosure-closed;">Germany Tuition Free Universities and Scholarships for International Students</li>
+        <li style="list-style: disclosure-closed;">KAAD Scholarships in Germany for Developing Countries</li>
+        <li style="list-style: disclosure-closed;">Marie Curie International Incoming Fellowships for Developing Countries</li>
+      </ul>
+
+      <h2>Checklist for Studying in Europe</h2>
+      <p>Preparing to study in Europe involves careful planning and gathering of necessary documents. Here’s a checklist:</p>
+      <ul>
+        <li style="list-style: disclosure-closed;">Academic Documents and University Paperwork</li>
+        <li style="list-style: disclosure-closed;">Bank Documents</li>
+        <li style="list-style: disclosure-closed;">General Documents</li>
+        <li style="list-style: disclosure-closed;">Health Documents</li>
+        <li style="list-style: disclosure-closed;">Travel Documents</li>
+        <li style="list-style: disclosure-closed;">Visa Requirements (Schengen Visa, Long Stay Visa, Language Courses Student Visa, Student Application Visa)</li>
+      </ul>
+
+      <p>Remember to thoroughly prepare your documents and comply with visa requirements before traveling to Europe for your studies.</p>
+
+      <h2>Further Information</h2>
+      <p>For more details on specific visa requirements and procedures, visit the official website of the embassy or consulate of the country you plan to study in.</p>
+    </div>
+    <div class="section-divider"></div>
+    <CTA />
+    <Testimonials />
+    <TopCountries />
+    <OurPartners />
+    <Contact />
+  </main>
+</MainLayout>

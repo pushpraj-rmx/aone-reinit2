@@ -1,0 +1,43 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import CTA from "@components/CTA.astro";
+import PageTitle from "@components/Page-Title.astro";
+import TopCanadaCourses from "@components/TopCanadaCourses.astro";
+import WhyChooseCanada from "@components/WhyChooseCanada.astro";
+import TopCountries from "../components/TopCountries.astro";
+import CanadaContent1 from "@components/Canada-content1.astro";
+import OurPartners from "@components/OurPartners.astro";
+import FAQ from "@components/FAQ.astro";
+import Testimonials from "@components/Testimonials.astro";
+import Contact from "@components/Contact.astro";
+import LifeInAustralia from "@components/Life_in_Australia.astro";
+import TabComponent from "@components/TabComponent.astro";
+// images
+import pageBannerImg from "@assets/img/country-img/canada-banner.jpg";
+
+const pageTitle = "Study in UK - United Kingdom Top Colleges, Courses, Scholarship | AOne Global";
+const pageDescription = "Explore study opportunities in the United Kingdom. Discover top universities, courses, and admission procedures. Your one step guide to study in Uk";
+const pageKeywords = "";
+const pageAuthor = "";
+
+const pageBanner = { url: pageBannerImg.src };
+---
+
+<!-- src/pages/index.astro -->
+<MainLayout title={pageTitle} description={pageDescription} keywords={pageKeywords} author={pageAuthor}>
+  <main>
+    <PageTitle title="Study in UK" banner={pageBanner} />
+    <CanadaContent1 />
+    <div class="section-divider"></div>
+    <CTA />
+    <TopCanadaCourses />
+    <WhyChooseCanada />
+    <LifeInAustralia />
+    <TabComponent />
+    <FAQ />
+    <Testimonials />
+    <TopCountries />
+    <OurPartners />
+    <Contact />
+  </main>
+</MainLayout>
